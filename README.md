@@ -22,7 +22,7 @@ Nesse desafio o principal objetivo é criar um hook de carrinho de compras, usa
 
 Você deve completar onde não possui código com o código para atingir os objetivos de cada teste. Os documentos que devem ser editados são:
 
-- [ ] [src/components/Header/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/components/Header/index.tsx);
+- [x] [src/components/Header/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/components/Header/index.tsx);
 - [ ] [src/pages/Home/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Home/index.tsx)
 - [ ] [src/pages/Cart/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Cart/index.tsx);
 - [ ] [src/hooks/useCart.tsx](https://github.com/https://github.com/saboyagustavo/rocketshoes/blob/main/src/hooks/useCart.tsx).
@@ -31,7 +31,7 @@ Você deve completar onde não possui código com o código para atingir os obje
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/71a7f217-c1bb-426a-8fcc-dfb65db6bb7a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/71a7f217-c1bb-426a-8fcc-dfb65db6bb7a/Untitled.png)
 
-- [ ] Você deve receber o array `cart` do hook `useCart` e mostrar em tela a quantidade de produtos **distintos** adicionados ao carrinho. Dessa forma, se o carrinho possui 4 unidades do item A e 1 unidade do item B o valor a ser mostrado é `2 itens`.
+- [x] Você deve receber o array `cart` do hook `useCart` e mostrar em tela a quantidade de produtos **distintos** adicionados ao carrinho. Dessa forma, se o carrinho possui 4 unidades do item A e 1 unidade do item B o valor a ser mostrado é `2 itens`.
 
 ### pages/Home/index.tsx
 

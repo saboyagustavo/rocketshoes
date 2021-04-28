@@ -25,7 +25,7 @@ Você deve completar onde não possui código com o código para atingir os obje
 - [x] [src/components/Header/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/components/Header/index.tsx);
 - [ ] [src/pages/Home/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Home/index.tsx)
 - [ ] [src/pages/Cart/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Cart/index.tsx);
-- [ ] [src/hooks/useCart.tsx](https://github.com/https://github.com/saboyagustavo/rocketshoes/blob/main/src/hooks/useCart.tsx).
+- [x] [src/hooks/useCart.tsx](https://github.com/https://github.com/saboyagustavo/rocketshoes/blob/main/src/hooks/useCart.tsx).
 
 ### components/Header/index.tsx
 
@@ -63,17 +63,17 @@ Nesse arquivo, temos cinco pontos importantes a serem implementados:
 ### hooks/useCart.tsx
 
 - [ ] **cart:** Deve verificar se existe algum registro com o valor `@RocketShoes:cart` e retornar esse valor caso existir. Caso contrário, retornar um array vazio.
-- [ ] **addProduct:** Deve adicionar um produto ao carrinho. 
+- [x] **addProduct:** Deve adicionar um produto ao carrinho. 
 Porém, é preciso verificar algumas coisas:
-    - [ ] O valor atualizado do carrinho deve ser perpetuado no **localStorage** utilizando o método `setItem`.
-    - [ ] Caso o produto já exista no carrinho, não se deve adicionar um novo produto repetido, apenas incrementar em 1 unidade a quantidade;
-    - [ ] Verificar se existe no estoque a quantidade desejada do produto. Caso contrário, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
+    - [x] O valor atualizado do carrinho deve ser perpetuado no **localStorage** utilizando o método `setItem`.
+    - [x] Caso o produto já exista no carrinho, não se deve adicionar um novo produto repetido, apenas incrementar em 1 unidade a quantidade;
+    - [x] Verificar se existe no estoque a quantidade desejada do produto. Caso contrário, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
 
     ```jsx
     toast.error('Quantidade solicitada fora de estoque');
     ```
 
-    - [ ] Capturar utilizando `trycatch` os erros que ocorrerem ao longo do método e, no catch, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
+    - [x] Capturar utilizando `trycatch` os erros que ocorrerem ao longo do método e, no catch, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
 
     ```jsx
     toast.error('Erro na adição do produto');

@@ -23,8 +23,8 @@ Nesse desafio o principal objetivo é criar um hook de carrinho de compras, usa
 Você deve completar onde não possui código com o código para atingir os objetivos de cada teste. Os documentos que devem ser editados são:
 
 - [x] [src/components/Header/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/components/Header/index.tsx);
-- [ ] [src/pages/Home/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Home/index.tsx)
-- [ ] [src/pages/Cart/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Cart/index.tsx);
+- [x] [src/pages/Home/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Home/index.tsx)
+- [x] [src/pages/Cart/index.tsx](https://github.com/saboyagustavo/rocketshoes/blob/main/src/pages/Cart/index.tsx);
 - [x] [src/hooks/useCart.tsx](https://github.com/https://github.com/saboyagustavo/rocketshoes/blob/main/src/hooks/useCart.tsx).
 
 ### components/Header/index.tsx
@@ -37,28 +37,28 @@ Você deve completar onde não possui código com o código para atingir os obje
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d320e3c-a052-4f72-994e-aa69617ee85c/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d320e3c-a052-4f72-994e-aa69617ee85c/Untitled.png)
 
-- [ ] Você deve renderizar os produtos buscados da fake API em tela com as informações de título, imagem, preço e quantidade adicionada ao carrinho. Por fim, é preciso implementar a funcionalidade de adicionar o produto escolhido ao carrinho ao clicar no botão `ADICIONAR AO CARRINHO`.
+- [x] Você deve renderizar os produtos buscados da fake API em tela com as informações de título, imagem, preço e quantidade adicionada ao carrinho. Por fim, é preciso implementar a funcionalidade de adicionar o produto escolhido ao carrinho ao clicar no botão `ADICIONAR AO CARRINHO`.
 
 Nesse arquivo, temos três pontos importantes a serem implementados:
 
-- [ ] **cartItemsAmount:** Deve possuir as informações da quantidade de cada produto no carrinho. Sugerimos criar um objeto utilizando `reduce` onde a chave representa o id do produto e o valor a quantidade do produto no carrinho.
+- [x] **cartItemsAmount:** Deve possuir as informações da quantidade de cada produto no carrinho. Sugerimos criar um objeto utilizando `reduce` onde a chave representa o id do produto e o valor a quantidade do produto no carrinho.
 
-- [ ] **loadProducts:** Deve buscar os produtos da Fake API e formatar o preço utilizando o helper `utils/format`
-- [ ] **handleAddProduct:** Deve adicionar o produto escolhido ao carrinho.
+- [x] **loadProducts:** Deve buscar os produtos da Fake API e formatar o preço utilizando o helper `utils/format`
+- [x] **handleAddProduct:** Deve adicionar o produto escolhido ao carrinho.
 
 ### pages/Cart/index.tsx
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a34120df-4046-4a84-8133-6eb987bceac6/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a34120df-4046-4a84-8133-6eb987bceac6/Untitled.png)
 
-- [ ] Você deve renderizar uma tabela com a imagem, título, preço unitário, quantidade de unidades e preço subtotal de cada produto o carrinho. Além disso, também é preciso renderizar o preço total do carrinho. Por fim, é preciso implementar as funcionalidades dos botões de decrementar, incrementar e remover o produto do carinho.
+- [x] Você deve renderizar uma tabela com a imagem, título, preço unitário, quantidade de unidades e preço subtotal de cada produto o carrinho. Além disso, também é preciso renderizar o preço total do carrinho. Por fim, é preciso implementar as funcionalidades dos botões de decrementar, incrementar e remover o produto do carinho.
 
 Nesse arquivo, temos cinco pontos importantes a serem implementados:
 
-- [ ] **cartFormatted:** Deve formatar o carrinho adicionando os campos `priceFormatted` (preço do produto) e `subTotal` (preço do produto multiplicado pela quantidade) ambos devidamente formatados com o `utils/format`.
-- [ ] **total:** Deve possuir a informação do valor total do carrinho devidamente formatado com o `utils/format`.
-- [ ] **handleProductIncrement:** Deve aumentar em 1 unidade a quantidade do produto escolhido ao carrinho.
-- [ ] **handleProductDecrement:** Deve diminuir em 1 unidade a quantidade do produto escolhido ao carrinho, onde o valor mínimo é 1 (nesse caso o botão deve estar desativado).
-- [ ] **handleRemoveProduct:** Deve remover o produto escolhido do carrinho.
+- [x] **cartFormatted:** Deve formatar o carrinho adicionando os campos `priceFormatted` (preço do produto) e `subTotal` (preço do produto multiplicado pela quantidade) ambos devidamente formatados com o `utils/format`.
+- [x] **total:** Deve possuir a informação do valor total do carrinho devidamente formatado com o `utils/format`.
+- [x] **handleProductIncrement:** Deve aumentar em 1 unidade a quantidade do produto escolhido ao carrinho.
+- [x] **handleProductDecrement:** Deve diminuir em 1 unidade a quantidade do produto escolhido ao carrinho, onde o valor mínimo é 1 (nesse caso o botão deve estar desativado).
+- [x] **handleRemoveProduct:** Deve remover o produto escolhido do carrinho.
 
 ### hooks/useCart.tsx
 
@@ -79,26 +79,26 @@ Porém, é preciso verificar algumas coisas:
     toast.error('Erro na adição do produto');
     ```
 
-- [ ] **removeProduct:** Deve remover um produto do carrinho. 
+- [x] **removeProduct:** Deve remover um produto do carrinho. 
 Porém, é preciso verificar algumas coisas:
-    - [ ] O valor atualizado do carrinho deve ser perpetuado no **localStorage** utilizando o método `setItem`.
-    - [ ] Capturar utilizando `trycatch` os erros que ocorrerem ao longo do método e, no catch, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
+    - [x] O valor atualizado do carrinho deve ser perpetuado no **localStorage** utilizando o método `setItem`.
+    - [x] Capturar utilizando `trycatch` os erros que ocorrerem ao longo do método e, no catch, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
 
     ```jsx
     toast.error('Erro na remoção do produto');
     ```
 
-- [ ] **updateProductAmount:** Deve atualizar a quantidade de um produto no carrinho.
+- [x] **updateProductAmount:** Deve atualizar a quantidade de um produto no carrinho.
 Porém, é preciso verificar algumas coisas:
-    - [ ] O valor atualizado do carrinho deve ser perpetuado no **localStorage** utilizando o método `setItem`.
-    - [ ] Se a quantidade do produto for menor ou igual a zero, sair da função **updateProductAmount** instantaneamente.
-    - [ ] Verificar se existe no estoque a quantidade desejada do produto. Caso contrário, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
+    - [x] O valor atualizado do carrinho deve ser perpetuado no **localStorage** utilizando o método `setItem`.
+    - [x] Se a quantidade do produto for menor ou igual a zero, sair da função **updateProductAmount** instantaneamente.
+    - [x] Verificar se existe no estoque a quantidade desejada do produto. Caso contrário, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
 
     ```jsx
     toast.error('Quantidade solicitada fora de estoque');
     ```
 
-    - [ ] Capturar utilizando `trycatch` os erros que ocorrerem ao longo do método e, no catch, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
+    - [x] Capturar utilizando `trycatch` os erros que ocorrerem ao longo do método e, no catch, utilizar o método `error` da **react-toastify** com a seguinte mensagem:
 
     ```jsx
     toast.error('Erro na alteração de quantidade do produto');

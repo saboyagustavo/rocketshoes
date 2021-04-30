@@ -62,7 +62,7 @@ Nesse arquivo, temos cinco pontos importantes a serem implementados:
 
 ### hooks/useCart.tsx
 
-- [ ] **cart:** Deve verificar se existe algum registro com o valor `@RocketShoes:cart` e retornar esse valor caso existir. Caso contrário, retornar um array vazio.
+- [x] **cart:** Deve verificar se existe algum registro com o valor `@RocketShoes:cart` e retornar esse valor caso existir. Caso contrário, retornar um array vazio.
 - [x] **addProduct:** Deve adicionar um produto ao carrinho. 
 Porém, é preciso verificar algumas coisas:
     - [x] O valor atualizado do carrinho deve ser perpetuado no **localStorage** utilizando o método `setItem`.
